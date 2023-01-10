@@ -1,0 +1,26 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+<html>
+
+	<div id="div">
+		<h1> {{ prediction }}</h1>
+		<ul style="list-style-type:square">
+			<li><p>Approving Officer <b style="color:rgba(237, 117, 117, 0.823) ">{{App_off_in}}</b> Approved Total<b style="color:rgba(237, 117, 117, 0.823) ">{{app_tot_trans}}</b> Procurement Processes, And Involved in <b style="color:rgba(237, 117, 117, 0.823) ">{{app_fraud_trans}}</b> Fraudulent Procurement Processes.</p>
+			<li><p>Requestung Officer <b style="color:rgba(237, 117, 117, 0.823) ">{{Req_off_in}}</b> Completed Total <b style="color:rgba(237, 117, 117, 0.823) ">{{Req_tot_trans}}</b> Procurement Processes, And Involved in <b style="color:rgba(237, 117, 117, 0.823) ">{{Req_fraud_trans}}</b> Fraudulent Procurement Processes.</li>
+			<li><p>Supplier <b style="color:rgba(237, 117, 117, 0.823) "> {{supp_in}}</b> Delivered <b style="color:rgba(237, 117, 117, 0.823) ">{{supp_tot_trans}}</b> Supplies, And Involved in <b style="color:rgba(237, 117, 117, 0.823) ">{{supp_fraud_trans}}</b> fraudalent Activities.</li>
+		</ul>
+</div>
+
+  <section class="two-column">
+	<div>
+		<img src="data:image/png;base64,{{ img_data1 }}" width="450" height="450" />
+	<!-- <img src="{{url_for('static', filename='Graph1.png')}}" width="450" height="450" /> -->
+		</div>
+	<div>
+		<img src="data:image/png;base64,{{ img_data2 }}" width="450" height="450" />
+	<!--  <img src="{{url_for('static', filename='Graph2.png')}}" width="450" height="450" /> -->
+	</div>
+ </section>
+</body>	
+</html>

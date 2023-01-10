@@ -1,0 +1,302 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+<body>	
+	<h2 style="color: rgba(255, 255, 255, 0.823)"> Fraud Detection in Procurement </h2>
+<div>
+	
+<form action="/result" method="POST">
+	<!-- <select class="operator" id="select_page" name="app_officer" >--> 
+	<label for="app_officer">Approving Officer Name </label><br>
+	<select class="" id="" name="app_officer" >
+	<option value="0">Rowney Cortin</option>
+	<option value="1">Karol Ferre</option>
+	<option value="2">Adelbert Heindrich</option>
+	<option value="3">Wilone Kaufman</option>
+	<option value="4">Jasper Raccio</option>
+	<option value="5">Krista Helin</option>
+	<option value="6">Leoline Emlin</option>
+	<option value="7">LaureO'Sharry</option>
+	<option value="8">Parry Shiel</option>
+	<option value="9">Rafael Penchen</option>
+	<option value="10">Jolene Hamby</option>
+	<option value="11">Eleanora Pattlel</option>
+	<option value="12">Morry MacGibbon</option>
+	<option value="13">Sauveur Da Costa</option>
+	<option value="14">DonniO'Shiel</option>
+	<option value="15">Matthiew Tolley</option>
+	<option value="16">Genny Doherty</option>
+	<option value="17">Amos Brusby</option>
+	<option value="18">Shanda Chaston</option>
+	<option value="19">Clarita Alldred</option>
+	<option value="20">Malissa Wenderoth</option>
+	<option value="21">Shandra McChruiter</option>
+	<option value="22">Brigit Pickle</option>
+	<option value="23">Jemima Girdler</option>
+	<option value="24">Sophronia Gennrich</option>
+	<option value="25">Tabbi Rounsefull</option>
+	<option value="26">Misha Brendel</option>
+	<option value="27">Doralyn Jimeno</option>
+	<option value="28">Lucian Tettley</option>
+	<option value="29">Analise Gamon</option>
+	<option value="30">Pandora Couper</option>
+	<option value="31">Pavlov McNirlan</option>
+	<option value="32">Shaine Bate</option>
+	<option value="33">Parry Puig</option>
+	<option value="34">Chadwick Demelt</option>
+	<option value="35">Thatch Basterfield</option>
+	<option value="36">Tonnie Kesteven</option>
+	<option value="37">Mattie Speeding</option>
+	<option value="38">Bowie Magenny</option>
+	<option value="39">Lyn Arenson</option>
+	<option value="40">Kerry Plet</option>
+	<option value="41">Ethelyn Charrington</option>
+	<option value="42">Lenora Titmuss</option>
+	<option value="43">Etan Messent</option>
+	<option value="44">Stormie Deery</option>
+	</select>
+	<pre></pre>
+
+	
+
+	<label for="req_officer">Requesting Officer Name </label><br>
+	<select class="operator" id="" name="req_officer">
+		<option value="0">Bunny Spraggs</option>
+		<option value="1">Lorrayne O' Lone</option>
+		<option value="2">Nicolette Convery</option>
+		<option value="3">Reuben Chiommienti</option>
+		<option value="4">Ely Gwinnel</option>
+		<option value="5">Ofilia Borrington</option>
+		<option value="6">Batsheva Danslow</option>
+		<option value="7">Lesly Hallifax</option>
+		<option value="8">Rebekah Jermy</option>
+		<option value="9">Silvie Whittock</option>
+		<option value="10">Jocelin Figg</option>
+		<option value="11">Tris Lerer</option>
+		<option value="12">Torey Falconer-Taylor</option>
+		<option value="13">Kiah Friday</option>
+		<option value="14">Bradney Legon</option>
+		<option value="15">Carline Ezzy</option>
+		<option value="16">Marget Metts</option>
+		<option value="17">Yorke Schuricke</option>
+		<option value="18">Tootsie Ganing</option>
+		<option value="19">Lars Laraway</option>
+		<option value="20">Dorothee Cahey</option>
+		<option value="21">Marshall Fanshawe</option>
+		<option value="22">Torry Vamplus</option>
+		<option value="23">Sofia Plumbe</option>
+		<option value="24">Joey Gallehock</option>
+		<option value="25">Benita Maker</option>
+		<option value="26">Perry Pieter</option>
+		<option value="27">Hannah Shildrick</option>
+		<option value="28">Beryle Menicomb</option>
+		<option value="29">Lloyd Cavaney</option>
+		<option value="30">Llewellyn Iacovacci</option>
+		<option value="31">Anthiathia Treen</option>
+		<option value="32">Susannah Sangar</option>
+		<option value="33">Jayme Birth</option>
+		<option value="34">Gloriana Vaz</option>
+	</select>
+	<pre></pre>
+
+
+	<label  for="sup">Supplier_Name	</label><br>
+	<select class="" id="" name="sup">
+		<option value="0">Rosenbaum Group</option>
+		<option value="1">Botsford, Rolfson and Pouros</option>
+		<option value="2">Ferry-Dibbert</option>
+		<option value="3">Gusikowski Group</option>
+		<option value="4">Hartmann Inc</option>
+		<option value="5">Friesen-Ullrich</option>
+		<option value="6">Ward-Wolff</option>
+		<option value="7">Swift-Friesen</option>
+		<option value="8">Cummerata, Gibson and Herman</option>
+		<option value="9">Howell, Haley and Cremin</option>
+		<option value="10">Bogan-Gerhold</option>
+		<option value="11">Rosenbaum-Jones</option>
+		<option value="12">Kirlin, Kutch and Tremblay</option>
+		<option value="13">Hessel-Bergnaum</option>
+		<option value="14">Ruecker, Senger and Feeney</option>
+		<option value="15">Pouros-Mitchell</option>
+		<option value="16">Witting Group</option>
+		<option value="17">Tillman-Larson</option>
+		<option value="18">Monahan-Rippin</option>
+		<option value="19">Miller-Lueilwitz</option>
+		<option value="20">Denesik LLC</option>
+		<option value="21">Ryan, Turner and Schulist</option>
+		<option value="22">Rohan-Runolfsdottir</option>
+		<option value="23">Hagenes, Kilback and Conroy</option>
+		<option value="24">Koepp, Zulauf and Bins</option>
+		<option value="25">Krajcik, Fritsch and Ebert</option>
+		<option value="26">Smith, Cummings and Auer</option>
+		<option value="27">Wuckert-Effertz</option>
+		<option value="28">Schmitt-Kling</option>
+		<option value="29">Rutherford, Murphy and Jast</option>
+		<option value="30">Rogahn and Sons</option>
+		<option value="31">Jacobs, Senger and Dickens</option>
+		<option value="32">Ratke-Morissette</option>
+		<option value="33">Sipes Inc</option>
+		<option value="34">Bartell, Swaniawski and Kuhlman</option>
+		<option value="35">Kuvalis-Schiller</option>
+		<option value="36">Spinka-Price</option>
+		<option value="37">Hills-Rau</option>
+		<option value="38">Hammes Inc</option>
+		<option value="39">Ward, Wisoky and Kiehn</option>
+		<option value="40">Bartell, Lemke and MacGyver</option>
+		<option value="41">Shanahan, Watsica and Mayert</option>
+		<option value="42">Schuster, Huels and Rolfson</option>
+		<option value="43">Herman and Sons</option>
+		<option value="44">Paucek and Sons</option>
+		<option value="45">Sanford LLC</option>
+		<option value="46">Koelpin-Brown</option>
+		<option value="47">Nolan, Bahringer and Torphy</option>
+		<option value="48">Leffler Inc</option>
+		<option value="49">Bayer, Haley and Hermann</option>
+		<option value="50">Lebsack, Herzog and Mraz</option>
+		<option value="51">Maggio, O'Kon and McClure</option>
+		<option value="52">Sipes-Schroeder</option>
+		<option value="53">Bauch Inc</option>
+		<option value="54">Wilkinson Inc</option>
+		<option value="55">Klein, Kilback and Wisozk</option>
+		<option value="56">Dare, Barrows and Gottlieb</option>
+		<option value="57">Metz LLC</option>
+		<option value="58">Waters and Sons</option>
+		<option value="59">Lind Group</option>
+		<option value="60">Reynolds, Dooley and Doyle</option>
+		<option value="61">Walsh Group</option>
+		<option value="62">Franecki-Kulas</option>
+		<option value="63">Ward, Larkin and Swift</option>
+		<option value="64">Graham, Little and Kris</option>
+		<option value="65">Vandervort, Nader and Reichert</option>
+		<option value="66">Thompson-Lowe</option>
+		<option value="67">Cassin-Langosh</option>
+		<option value="68">Murazik, Conn and Rodriguez</option>
+		<option value="69">Cummings-Gleason</option>
+		<option value="70">Denesik Group</option>
+		<option value="71">Marvin, Legros and Hoppe</option>
+		<option value="72">Gutkowski-Lynch</option>
+		<option value="73">Toy-Ferry</option>
+		<option value="74">Wehner-Stehr</option>
+		<option value="75">Schiller-Cremin</option>
+		<option value="76">Kunze, Von and Leannon</option>
+		<option value="77">Mante Inc</option>
+		<option value="78">Lockman-Torphy</option>
+		<option value="79">Legros-Jacobs</option>
+		<option value="80">Stanton-West</option>
+		<option value="81">Maggio, Hahn and Jones</option>
+		<option value="82">Wolff, Wisozk and Fisher</option>
+		<option value="83">Yundt, Johns and Cole</option>
+		<option value="84">Hintz Inc</option>
+		<option value="85">Boyle, Price and Jacobson</option>
+	</select>
+	<pre></pre>
+
+
+	<label  for="pro_cat">Product_Category</label><br>
+	<select class="" id="" name="pro_cat">
+	<option value="0">Beverages</option>
+	<option value="1">Seafood</option>
+	<option value="2">Dairy</option>
+	<option value="3">Cleaning_products</option>
+	<option value="4">Canned_foods</option>
+	<option value="5">Frozen</option>
+	</select>
+	<pre></pre>
+
+
+	<label  for="sub_cat">Sub_Category</label><br>
+	<select class="" id="" name="sub_cat">
+	<option value="0">Juice</option>
+	<option value="1">Crab</option>
+	<option value="2">Yogurt</option>
+	<option value="3">Sponges / Scrubbers</option>
+	<option value="4">Broth</option>
+	<option value="5">Burritos</option>
+	<option value="6">Milk</option>
+	<option value="7">Lobster</option>
+	<option value="8">Butter / Margarine</option>
+	<option value="9">Salmon</option>
+	<option value="10">Applesauce</option>
+	<option value="11">Cottage cheese</option>
+	<option value="12">Air freshener</option>
+	<option value="13">Vegetables</option>
+	<option value="14">Catfish</option>
+	<option value="15">Beer</option>
+	<option value="16">Bleach / Detergent</option>
+	<option value="17">Olives</option>
+	<option value="18">Soda/Pop</option>
+	<option value="19">Baked beans</option>
+	<option value="20">Veggies</option>
+	<option value="21">Shrimp</option>
+	<option value="22">Wine</option>
+	<option value="23">Garbage bags</option>
+	<option value="24">Glass cleaner</option>
+	<option value="25">Vacuum bags</option>
+	<option value="26">Pizza</option>
+	<option value="27">Breakfasts</option>
+	<option value="28">Sports Drinks</option>
+	</select>
+	<pre></pre>
+
+
+	<label  >Quantity (40 - 95) </label><br>
+	<input for="qty" type="text" name="u" placeholder="Quantity" required="required" >
+	<pre></pre>
+
+
+	<label >Procurement_Process</label><br>
+	<select class="operator" id="select_page" name="pro_process">
+	<option value="0">Competetive Bid</option>
+	<option value="1">Non-Competetive Bid</option>
+	</select>
+	<pre></pre>
+
+
+	<label for="tid">Tender Invitation Date</label><br>
+    <input class="input" type="date" id="DOB" name="tid"min="2020-01-01" max="2030-12-31" required="required">
+	<pre></pre>
+
+	<label for="dfs">Deadline For Submissions</label><br>
+    <input class="input" type="date" id="DOB" name="dfs"min="2020-01-01" max="2030-12-31" required="required">
+	<pre></pre>
+
+	<label for="pd">Purchase Date</label><br>
+    <input class="input" type="date" id="DOB" name="pd"min="2020-01-01" max="2030-12-31" required="required">
+	<pre></pre>	
+
+	<label >Number of Bids Received (0 - 16)</label><br>
+	<input class="input" type="text" name="N0_bids" placeholder="Number of Bids Received" required="required">
+	<pre></pre>
+
+	<label> Unit Price(30 - 200) </label><br>
+	<input calss="input" type="text" name="unit_price" placeholder="Unit Price " required="required">
+	<pre></pre>
+
+	<label > Buying Price(25 - 210)  </label><br>
+	<input class="input" type="text" name="buying_price" placeholder="Buying Price " required="required">
+	<pre></pre>
+
+	<label >Total Buying Price (1,000 - 16,500)</label><br>
+	<input class="input" type="text" name="tot_buying_price" placeholder="Total Buying Price" required="required">
+	<pre></pre>
+
+	<button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+
+	
+</form>
+
+</div>
+</body>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+	//change selectboxes to selectize mode to be searchable
+	   $("select").select2();
+	});
+	
+</script>
+</html>
